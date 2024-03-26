@@ -1,0 +1,19 @@
+.nav{
+    background-color: rebeccapurple;
+}
+.container {
+    position: relative;
+  }
+  
+  .logo1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo2 {
+    position: absolute;
+    top: 1000000px; /* ajusta según sea necesario */
+    left: 50px; /* ajusta según sea necesario */
+  }
+  
