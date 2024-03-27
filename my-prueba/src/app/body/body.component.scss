@@ -1,0 +1,39 @@
+.container {
+    max-width: 800px; // Ancho máximo del contenedor
+    margin: 0 auto; // Centrar el contenedor horizontalmente
+    padding: 20px; // Añadir espacio interno al contenedor
+  
+    img {
+      max-width: 100%; // La imagen ocupará el 100% del ancho del contenedor
+      height: auto; // La altura se ajustará automáticamente para mantener la proporción
+      display: block; // Mostrar la imagen como un bloque para evitar espacios adicionales
+      margin: 0 auto; // Centrar la imagen dentro del contenedor horizontalmente
+    }
+  }
+  
+
+  .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; // Color de fondo del botón
+  color: white; // Color del texto del botón
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3; // Cambiar el color de fondo al pasar el mouse
+  }
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C20114; // Color de fondo del botón
+    color: white; // Color del texto del botón
+    text-decoration: none;
+    cursor: pointer;
+  }
