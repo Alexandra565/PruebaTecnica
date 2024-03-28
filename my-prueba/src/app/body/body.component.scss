@@ -1,39 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+$font-stack: "Roboto";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+  font-size: 20px;
+}
+
 .container {
-    max-width: 800px; // Ancho máximo del contenedor
-    margin: 0 auto; // Centrar el contenedor horizontalmente
-    padding: 20px; // Añadir espacio interno al contenedor
-  
-    img {
-      max-width: 100%; // La imagen ocupará el 100% del ancho del contenedor
-      height: auto; // La altura se ajustará automáticamente para mantener la proporción
-      display: block; // Mostrar la imagen como un bloque para evitar espacios adicionales
-      margin: 0 auto; // Centrar la imagen dentro del contenedor horizontalmente
-    }
-  }
-  
+  width: 100%;
+  height: 27rem;
+  background-image: url("/assets/Banner.png");
+  background-position: 0% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff; // Color de fondo del botón
-  color: white; // Color del texto del botón
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #0056b3; // Cambiar el color de fondo al pasar el mouse
+@media only screen and (max-width: 768px) {
+  .container {
+    background-position: 45% 6%;
+    background-size: auto;
+    height: 35rem;
   }
 }
 
+.card.card-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.title1 {
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 0.7rem;
+}
+
+.parrafo {
+  margin: 0;
+  margin-bottom: 3rem;
+  color: white;
+  font-size: 22px;
+}
+
 .btn {
-    display: inline-block;
-    padding: 7px 45px;
-    border: none;
-    border-radius: 5px;
-    background-color: #C20114; // Color de fondo del botón
-    color: white; // Color del texto del botón
-    text-decoration: none;
-    cursor: pointer;
-  }
+  display: inline-block;
+  padding: 8px 60px;
+  border-radius: 62px;
+  background-color: #c20114; // Color de fondo del botón
+  color: white; // Color del texto del botón
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.second-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 90px;
+}
+
+// //Primera imagen del contenedor( Chicago)
+// .card.card-2 {
+//   margin-left: 40px;
+//   width: 296px;
+//   height: 258px;
+//   top: 615px;
+//   background-image: url("/assets/chicago.jpg");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Segunda imagen del contenedor( Porto)
+// .card.card-3 {
+//   width: 614px;
+//   height: 258px;
+//   top: 615px;
+//   left: 317px;
+//   background-image: url("/assets/porto.png");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Tercera imagen del contenedor( mire)
+// .card.card-4 {
+//   width: 297px;
+//   height: 258px;
+//   top: 615px;
+//   left: 951px;
+//   background-image: url("/assets/mire.jpg");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Margen del contenedor de la letra del banner
+// .card-content {
+//   padding: 5px 5%;
+// }
+
+// //Contenido de los containers de las 3 imagenes
+// .card-content-1 {
+//   width: 100%;
+//   display: flex;
+//   align-items: end;
+//   justify-content: end;
+// }
+
+// //Banner final
+// .card.card-5 {
+//   width: 71vw; /* Ancho completo de la ventana del navegador */
+//   height: 50vh; /* La altura es la mitad de la altura de la ventana del navegador */
+//   background-image: url("/assets/ninoBanner.png"); /* Ruta de la imagen */
+//   margin-left: 140px;
+// }
+
+// .title2 {
+//   color: rgb(24, 23, 23);
+//   font-weight: 700;
+//   font-size: 30px;
+// }
+// .second-container {
+//   width: 100%;
+//   margin-right: 0;
+//   padding-left: 40px;
+// }
+
+// @media screen and (max-width: 90px) {
+//   .card {
+//     flex: 1 0 calc(50% - 8px); /* Para que las tarjetas ocupen el 50% del ancho en pantallas más pequeñas */
+//     height: 60px; /* Ajusta el alto de las tarjetas para pantallas más pequeñas */
+//   }
+// }
