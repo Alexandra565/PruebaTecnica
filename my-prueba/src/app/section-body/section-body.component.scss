@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+$font-stack: "Roboto";
+
+$img-1: url("/assets/chicago.jpg"); // imagen 1
+$img-2: url("/assets/porto.png"); // imagen 2
+$img-3: url("/assets/mire.jpg"); // imagen 3
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+  font-size: 20px;
+}
+
+.body2 {
+  padding: 40px 5%;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 22px;
+  grid-auto-rows: minmax(280px, auto);
+  justify-content: stretch;
+}
+.card-one {
+  grid-column: 1 / 2;
+  background-image: $img-1;
+}
+.card-two {
+  grid-column: 2 / 4;
+  background-image: $img-2;
+}
+.card-three {
+  grid-column: 4 / 5;
+  background-image: $img-3;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-one {
+    grid-column: 1 / 5;
+    background-image: $img-1;
+  }
+  .card-two {
+    grid-column: 1 / 5;
+    background-image: $img-2;
+  }
+  .card-three {
+    grid-column: 1 / 5;
+    background-image: $img-3;
+  }
+}
+
+.cardimg {
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardimg::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 150% 0 0 0;
+}
+
+.text-section {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  text-align: end;
+  padding: 1.5rem;
+  color: white;
+}
+
+.h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.p1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.p2 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.number {
+  display: flex;
+  direction: row;
+  align-items: end;
+}
+
+// //Primera imagen del contenedor( Chicago)
+// .card.card-2 {
+//   margin-left: 40px;
+//   width: 296px;
+//   height: 258px;
+//   top: 615px;
+//   background-image: url("/assets/chicago.jpg");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Segunda imagen del contenedor( Porto)
+// .card.card-3 {
+//   width: 614px;
+//   height: 258px;
+//   top: 615px;
+//   left: 317px;
+//   background-image: url("/assets/porto.png");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Tercera imagen del contenedor( mire)
+// .card.card-4 {
+//   width: 297px;
+//   height: 258px;
+//   top: 615px;
+//   left: 951px;
+//   background-image: url("/assets/mire.jpg");
+//   background-size: cover;
+//   border-radius: 16px;
+// }
+
+// //Margen del contenedor de la letra del banner
+// .card-content {
+//   padding: 5px 5%;
+// }
+
+// //Contenido de los containers de las 3 imagenes
+// .card-content-1 {
+//   width: 100%;
+//   display: flex;
+//   align-items: end;
+//   justify-content: end;
+// }
+
+// //Banner final
+// .card.card-5 {
+//   width: 71vw; /* Ancho completo de la ventana del navegador */
+//   height: 50vh; /* La altura es la mitad de la altura de la ventana del navegador */
+//   background-image: url("/assets/ninoBanner.png"); /* Ruta de la imagen */
+//   margin-left: 140px;
+// }
+
+// .title2 {
+//   color: rgb(24, 23, 23);
+//   font-weight: 700;
+//   font-size: 30px;
+// }
+// .second-container {
+//   width: 100%;
+//   margin-right: 0;
+//   padding-left: 40px;
+// }
+
+// @media screen and (max-width: 90px) {
+//   .card {
+//     flex: 1 0 calc(50% - 8px); /* Para que las tarjetas ocupen el 50% del ancho en pantallas más pequeñas */
+//     height: 60px; /* Ajusta el alto de las tarjetas para pantallas más pequeñas */
+//   }
+// }

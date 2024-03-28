@@ -27,7 +27,6 @@ header {
 
 .logo-1 {
     float: right;
-    // padding: 9px 25px;
     margin-right: 60px;
 
 }
@@ -50,11 +49,7 @@ header {
     color: rgb(10, 10, 10);
 }
 
-
-
-/* Tu código CSS existente */
-
-/* Estilos para el menú hamburguesa */
+/* Estilos para el menu responsive */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -78,7 +73,7 @@ header {
     margin-right:0 60px;
 }
 
-/* Estilos para el icono de cerrar */
+/* Estilos para el icono de cerrar del menu responsive */
 .close-menu::before {
     content: "\00D7";
     font-size: 30px;
@@ -90,12 +85,12 @@ header {
     display: none;
 }
 
-/* Mostrar el menú al hacer clic en el icono de hamburguesa */
+
 #toggle-menu:checked~.header .navbar {
     display: block;
 }
 
-/* Mostrar el icono de cerrar y ocultar el de hamburguesa al abrir el menú */
+
 #toggle-menu:checked~.header .hamburger-menu {
     display: none;
 }
@@ -104,7 +99,7 @@ header {
     display: block;
 }
 
-/* Media query para mostrar el menú hamburguesa en pantallas más pequeñas */
+/* responsive para pantallas mas pequenas  */
 @media (max-width: 858px) {
     .hamburger-menu {
         display: block;
